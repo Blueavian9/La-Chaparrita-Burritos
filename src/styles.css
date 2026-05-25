@@ -1396,3 +1396,409 @@ a.contact__method-value:hover {
         scroll-behavior: auto;
     }
 }
+
+/* =====================
+   ABOUT — MASCOT LOGO
+===================== */
+.about__mascot {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 0.5rem;
+}
+
+/* =====================
+   MENU — CATEGORIES
+===================== */
+.menu__category {
+    margin-bottom: var(--space-xl);
+    padding-bottom: var(--space-lg);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.menu__category:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.menu__category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-md);
+    padding-bottom: var(--space-sm);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.08);
+}
+
+.menu__category-header-left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.menu__category-header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.4rem;
+    text-align: right;
+}
+
+.menu__cat-eyebrow {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--color-warm);
+}
+
+.menu__cat-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 900;
+    color: var(--color-cream);
+    line-height: 1.1;
+}
+
+.menu__cat-price-badge {
+    display: inline-flex;
+    background: var(--color-warm);
+    color: #fff;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 0.35rem 1rem;
+    border-radius: 50px;
+}
+
+.menu__cat-price-badge--soda {
+    background: transparent;
+    border: 2px solid var(--color-warm);
+    color: var(--color-warm);
+}
+
+.menu__cat-note {
+    font-size: 0.8rem;
+    color: rgba(250, 243, 224, 0.55);
+    line-height: 1.5;
+}
+
+/* ---- POP Brand Badge ---- */
+.menu__pop-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.25rem;
+}
+
+.menu__pop-brand-text {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: rgba(250, 243, 224, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.menu__pop-brand-pop {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--color-warm);
+}
+
+.menu__pop-brand-sub {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: rgba(250, 243, 224, 0.5);
+}
+
+/* ---- Burrito List ---- */
+.menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.menu__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--space-md);
+    padding: 1.1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    transition: background 0.2s;
+}
+
+.menu__item:first-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.menu__item:hover {
+    background: rgba(255, 255, 255, 0.02);
+    margin: 0 calc(-1 * var(--space-sm));
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
+    border-radius: 8px;
+}
+
+.menu__item--specialty {
+    background: rgba(255, 92, 168, 0.05);
+    border-radius: 8px;
+    padding: 1.1rem 0.75rem;
+    border: 1px solid rgba(255, 92, 168, 0.15) !important;
+    margin-bottom: 0.5rem;
+}
+
+.menu__item--specialty:hover {
+    background: rgba(255, 92, 168, 0.09);
+    margin: 0 0 0.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+.menu__item-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.menu__item-name-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.menu__item-name {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--color-cream);
+    line-height: 1.2;
+}
+
+.menu__specialty-badge {
+    display: inline-flex;
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-warm);
+    background: rgba(255, 92, 168, 0.12);
+    border: 1px solid rgba(255, 92, 168, 0.3);
+    padding: 0.25rem 0.6rem;
+    border-radius: 50px;
+    white-space: nowrap;
+}
+
+.menu__item-desc {
+    color: rgba(250, 243, 224, 0.6);
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+
+.menu__item-price {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-warm);
+    white-space: nowrap;
+    flex-shrink: 0;
+    padding-top: 0.1rem;
+}
+
+.menu__list-footer {
+    margin-top: var(--space-sm);
+    font-size: 0.82rem;
+    color: rgba(250, 243, 224, 0.45);
+    letter-spacing: 0.03em;
+}
+
+/* ---- Card image badge ---- */
+.menu__card-image {
+    position: relative;
+}
+
+.menu__card-img-badge {
+    position: absolute;
+    top: 0.6rem;
+    left: 0.6rem;
+    background: var(--color-warm);
+    color: #fff;
+    font-size: 0.68rem;
+    font-weight: 700;
+    padding: 0.3rem 0.65rem;
+    border-radius: 50px;
+    letter-spacing: 0.05em;
+    z-index: 2;
+}
+
+/* ---- 2-column grid variant ---- */
+.menu__grid--2col {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* =====================
+   CATERING
+===================== */
+.catering {
+    background: #111518;
+    position: relative;
+    overflow: hidden;
+}
+
+.catering::before {
+    content: '';
+    position: absolute;
+    bottom: -120px;
+    left: -120px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(255, 92, 168, 0.12) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.catering__inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+    align-items: center;
+}
+
+.catering__text .section__heading {
+    color: var(--color-cream);
+}
+
+.catering__text>p {
+    color: rgba(250, 243, 224, 0.78);
+    font-size: 1.05rem;
+    margin-bottom: var(--space-md);
+    max-width: 500px;
+}
+
+.catering__uses {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    margin-bottom: var(--space-md);
+}
+
+.catering__uses li {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.95rem;
+    color: rgba(250, 243, 224, 0.8);
+}
+
+.catering__uses svg {
+    color: var(--color-avocado);
+    flex-shrink: 0;
+}
+
+.catering__cta {
+    background: var(--color-warm);
+    border-color: var(--color-warm);
+}
+
+/* ---- Phone highlight card ---- */
+.catering__highlight {
+    display: flex;
+    justify-content: center;
+}
+
+.catering__phone-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius);
+    padding: var(--space-lg) var(--space-md);
+    text-align: center;
+    max-width: 360px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.catering__phone-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255, 92, 168, 0.06), transparent 60%);
+    pointer-events: none;
+}
+
+.catering__phone-card-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--color-warm);
+    margin-bottom: 0.75rem;
+}
+
+.catering__phone-card-number {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 5vw, 2.6rem);
+    font-weight: 900;
+    color: var(--color-cream);
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.02em;
+}
+
+.catering__phone-card-sub {
+    font-size: 0.88rem;
+    color: rgba(250, 243, 224, 0.65);
+    margin-bottom: var(--space-sm);
+    line-height: 1.6;
+}
+
+.catering__phone-card-badge {
+    display: inline-block;
+    background: var(--color-avocado);
+    color: #fff;
+    font-size: 0.82rem;
+    font-weight: 700;
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+}
+
+/* =====================
+   RESPONSIVE ADDITIONS
+===================== */
+@media (min-width: 768px) {
+    .catering__inner {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .menu__category-header {
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .menu__category-header {
+        flex-direction: column;
+    }
+
+    .menu__category-header-right {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .menu__item {
+        gap: var(--space-sm);
+    }
+
+    .catering__phone-card {
+        max-width: 100%;
+    }
+}

@@ -5,48 +5,37 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-    content="La Chaparrita Burritos — authentic home-cooked breakfast burritos and tortas. Family-run pop-up in El Sereno, LA. Wed–Sat, 7AM until sold out." />
+    content="La Chaparrita Burritos — overstuffed $10 breakfast burritos, signature dirty sodas & agua fresca. Family pop-up in El Sereno, LA. Tue–Fri, 7AM until sold out." />
   <meta name="theme-color" content="#101214" />
-
-  <!-- Open Graph -->
   <meta property="og:title" content="La Chaparrita Burritos | El Sereno, LA" />
   <meta property="og:description"
-    content="Authentic home-cooked breakfast burritos & telera tortas. $7. Wed–Sat, 7AM." />
+    content="Overstuffed $10 burritos, dirty sodas & agua fresca. Tue–Fri 7AM outside Elephant Hills Cafe." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://blueavian9.github.io/La-Chaparrita-Burritos/" />
-
+  <meta property="og:image" content="assets/images/logo.png" />
   <title>La Chaparrita Burritos | El Sereno, LA</title>
-
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@400;500;600&display=swap"
-    rel="stylesheet" />
-
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="src/styles.css" />
 </head>
 
 <body>
 
-  <!-- ========== SKIP NAV (Accessibility) ========== -->
   <a href="#hero" class="skip-link">Skip to main content</a>
 
   <!-- ========== NAV ========== -->
   <header class="nav" role="banner">
     <a href="#hero" class="nav__logo" aria-label="La Chaparrita Burritos — home">La Chaparrita</a>
-
     <input type="checkbox" id="nav-toggle" class="nav__toggle-input" aria-hidden="true" />
     <label for="nav-toggle" class="nav__hamburger" aria-label="Toggle navigation menu">
-      <span></span>
-      <span></span>
-      <span></span>
+      <span></span><span></span><span></span>
     </label>
-
     <nav aria-label="Main navigation">
       <ul class="nav__links" id="nav__links">
         <li><a href="#about">About</a></li>
         <li><a href="#menu">Menu</a></li>
+        <li><a href="#catering">Catering</a></li>
         <li><a href="#order">Order</a></li>
         <li><a href="#hours">Hours</a></li>
         <li><a href="#location">Location</a></li>
@@ -67,57 +56,27 @@
     </nav>
   </header>
 
-  <!-- ========== HERO (Full-screen Video Background) ========== -->
+  <!-- ========== HERO ========== -->
   <section id="hero" class="hero" aria-label="Hero banner">
-
-    <!-- VIDEO BACKGROUND — drop your .mp4 files into assets/videos/ -->
     <div class="hero__video-wrapper" aria-hidden="true">
-
-      <!--
-        Scene 1 — Person taking a bite of a grilled burrito
-        Recommended free sources:
-          • https://www.pexels.com/search/videos/burrito/
-          • https://coverr.co/videos/
-        Download .mp4, place in assets/videos/scene-burrito.mp4
-      -->
-      <video class="hero__video hero__video--active" data-scene="0" autoplay muted playsinline preload="auto"
-        aria-hidden="true">
+      <video class="hero__video hero__video--active" data-scene="0" autoplay muted playsinline preload="auto" aria-hidden="true">
         <source src="assets/videos/scene-burrito.mp4" type="video/mp4" />
       </video>
-
-      <!--
-        Scene 2 — Los Angeles Downtown skyline
-        Recommended: https://www.pexels.com/search/videos/los+angeles+downtown/
-        Place at: assets/videos/scene-la-downtown.mp4
-      -->
       <video class="hero__video" data-scene="1" muted playsinline preload="none" aria-hidden="true">
         <source src="assets/videos/scene-la-downtown.mp4" type="video/mp4" />
       </video>
-
-      <!--
-        Scene 3 — El Sereno neighborhood / street life
-        Recommended: https://www.pexels.com/search/videos/los+angeles+street/
-        Place at: assets/videos/scene-el-sereno.mp4
-      -->
       <video class="hero__video" data-scene="2" muted playsinline preload="none" aria-hidden="true">
         <source src="assets/videos/scene-el-sereno.mp4" type="video/mp4" />
       </video>
-
-      <!-- Dark gradient overlay so text is always readable -->
       <div class="hero__overlay" aria-hidden="true"></div>
     </div>
-
-    <!-- Scene label indicator -->
     <div class="hero__scene-dots" aria-hidden="true">
       <button class="hero__scene-dot hero__scene-dot--active" data-target="0" tabindex="-1"></button>
       <button class="hero__scene-dot" data-target="1" tabindex="-1"></button>
       <button class="hero__scene-dot" data-target="2" tabindex="-1"></button>
     </div>
-
-    <!-- Fallback blobs (visible when no video loads) -->
     <div class="hero__bg-blob hero__bg-blob--1" aria-hidden="true"></div>
     <div class="hero__bg-blob hero__bg-blob--2" aria-hidden="true"></div>
-
     <div class="hero__content">
       <p class="hero__eyebrow reveal">
         <span class="hero__eyebrow-dot" aria-hidden="true"></span>
@@ -145,7 +104,6 @@
         <a href="#menu" class="btn btn--outline">See the Menu</a>
       </div>
     </div>
-
     <div class="hero__scroll" aria-hidden="true">
       <span>scroll</span>
       <div class="hero__scroll-line"></div>
@@ -156,12 +114,12 @@
   <div class="ticker" aria-hidden="true" role="presentation">
     <div class="ticker__track">
       <span class="ticker__set">
-        Breakfast Burritos · Telera Tortas · El Sereno, LA · $7 · Wed – Sat · 7:00 AM · Family Recipe · Oaxaca Cheese ·
-        Avocado Spread · Open Now ·
+        Overstuffed Burritos $10 · Dirty Sodas $7.50 · Agua Fresca Casera · El Sereno, LA · Tue–Fri 7AM ·
+        Homemade Salsa Included · Big Orders Welcome · Chicharrón en Salsa Verde · La Chaparrita POP ·
       </span>
       <span class="ticker__set" aria-hidden="true">
-        Breakfast Burritos · Telera Tortas · El Sereno, LA · $7 · Wed – Sat · 7:00 AM · Family Recipe · Oaxaca Cheese ·
-        Avocado Spread · Open Now ·
+        Overstuffed Burritos $10 · Dirty Sodas $7.50 · Agua Fresca Casera · El Sereno, LA · Tue–Fri 7AM ·
+        Homemade Salsa Included · Big Orders Welcome · Chicharrón en Salsa Verde · La Chaparrita POP ·
       </span>
     </div>
   </div>
@@ -172,9 +130,18 @@
 
       <figure class="about__figure reveal-left" aria-hidden="true">
         <div class="about__figure-inner">
-          <div class="about__figure-badge">Est. El Sereno</div>
-          <div class="about__figure-emoji">🌯</div>
-          <div class="about__figure-tag">Family Recipe</div>
+          <!--
+            LOGO: Save your La Chaparrita mascot image as:
+            assets/images/logo.png
+            Then this will display automatically.
+          -->
+          <img src="assets/images/logo.png" alt="La Chaparrita mascot" class="about__mascot"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="about__figure-fallback" style="display:none; flex-direction:column; align-items:center; gap:1rem;">
+            <div class="about__figure-badge">Est. El Sereno</div>
+            <div class="about__figure-emoji">🌯</div>
+            <div class="about__figure-tag">Family Recipe</div>
+          </div>
           <div class="about__figure-corner-tl" aria-hidden="true"></div>
           <div class="about__figure-corner-br" aria-hidden="true"></div>
         </div>
@@ -191,7 +158,7 @@
         <p>
           No shortcuts. Just real ingredients, real recipes, and real love — wrapped up tight and
           ready at 7AM. Find us set up outside Elephant Hills Cafe on Huntington Drive,
-          Wednesday through Saturday. Come early — we sell out fast.
+          Tuesday through Friday. Come early — we sell out fast.
         </p>
         <a href="#menu" class="btn btn--avocado">See What We're Making →</a>
       </div>
@@ -205,84 +172,245 @@
       <header class="menu__header">
         <span class="section__label section__label--dim">What We Serve</span>
         <h2 class="section__heading section__heading--light">The Menu</h2>
-        <p class="menu__subtitle">Everything made fresh. Everything $7. Every morning.</p>
+        <p class="menu__subtitle">Everything made fresh. Made with care, served with love. Hot &amp; ready for you.</p>
       </header>
 
-      <div class="menu__grid">
+      <!-- ── CATEGORY 1: BURRITOS ── -->
+      <div class="menu__category">
+        <div class="menu__category-header">
+          <div class="menu__category-header-left">
+            <span class="menu__cat-eyebrow">Main Event</span>
+            <h3 class="menu__cat-title">Overstuffed Burritos</h3>
+          </div>
+          <div class="menu__category-header-right">
+            <span class="menu__cat-price-badge">All $10</span>
+            <span class="menu__cat-note">🫙 Homemade salsa with every order</span>
+          </div>
+        </div>
 
-        <article class="menu__card reveal-up" style="--delay: 0ms">
-          <div class="menu__card-image">
-            <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=800&q=80"
-              alt="Grilled breakfast burrito with steak, beans, Oaxaca cheese and avocado" loading="lazy" />
-          </div>
-          <div class="menu__card-top">
-            <span class="menu__price" aria-label="Price: $7">$7</span>
-          </div>
-          <h3 class="menu__card-title">Breakfast Burrito</h3>
-          <p class="menu__card-desc">
-            Your choice of protein wrapped with beans, creamy avocado spread, and melted Oaxaca cheese.
-          </p>
-          <ul class="menu__proteins" aria-label="Protein options">
-            <li>Steak</li>
-            <li>Chorizo</li>
-            <li>Sausage</li>
-            <li>Potato</li>
-          </ul>
-        </article>
+        <div class="menu__list" role="list">
 
-        <article class="menu__card reveal-up" style="--delay: 100ms">
-          <div class="menu__card-image">
-            <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=800&q=80"
-              alt="Breakfast torta on a fresh telera roll with beans, avocado, and Oaxaca cheese" loading="lazy" />
+          <div class="menu__item menu__item--specialty" role="listitem">
+            <div class="menu__item-info">
+              <div class="menu__item-name-row">
+                <h4 class="menu__item-name">Chicharrón en Salsa Verde Burrito</h4>
+                <span class="menu__specialty-badge">⭐ Our Specialty</span>
+              </div>
+              <p class="menu__item-desc">
+                Crispy pork simmered in our green salsa. Packed with flavor, medium spice level, served with beans. Very popular!
+              </p>
+            </div>
+            <span class="menu__item-price" aria-label="Price: $10">$10</span>
           </div>
-          <div class="menu__card-top">
-            <span class="menu__price" aria-label="Price: $7">$7</span>
-          </div>
-          <h3 class="menu__card-title">Breakfast Torta</h3>
-          <p class="menu__card-desc">
-            Same great fillings on a fresh telera roll — beans, avocado spread, and Oaxaca cheese.
-          </p>
-          <ul class="menu__proteins" aria-label="Protein options">
-            <li>Steak</li>
-            <li>Chorizo</li>
-            <li>Sausage</li>
-            <li>Potato</li>
-          </ul>
-        </article>
 
-        <article class="menu__card menu__card--new reveal-up" style="--delay: 200ms">
-          <div class="menu__card-image">
-            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=800&q=80"
-              alt="Champurrado — warm Mexican chocolate masa drink" loading="lazy" />
+          <div class="menu__item" role="listitem">
+            <div class="menu__item-info">
+              <h4 class="menu__item-name">Bacon Breakfast Burrito</h4>
+              <p class="menu__item-desc">Smoked bacon mixed in with potatoes, egg and cheese.</p>
+            </div>
+            <span class="menu__item-price" aria-label="Price: $10">$10</span>
           </div>
-          <div class="menu__card-top">
-            <span class="menu__new-badge">New</span>
-            <span class="menu__price" aria-label="Price: $7">$7</span>
-          </div>
-          <h3 class="menu__card-title">Champurrado</h3>
-          <p class="menu__card-desc">
-            Thick chocolate masa drink spiced with cinnamon and piloncillo — perfect with a savory burrito.
-          </p>
-          <p class="menu__keto-note" aria-label="New menu note">✨ Warm &amp; cozy</p>
-        </article>
 
-        <article class="menu__card menu__card--new reveal-up" style="--delay: 300ms">
-          <div class="menu__card-image">
-            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=800&q=80"
-              alt="Sunrise Protein Yogurt bowl with fresh fruit and keto granola" loading="lazy" />
+          <div class="menu__item" role="listitem">
+            <div class="menu__item-info">
+              <h4 class="menu__item-name">Chorizo Breakfast Burrito</h4>
+              <p class="menu__item-desc">Savory pork chorizo seasoned to perfection with fluffy egg, potatoes and beans.</p>
+            </div>
+            <span class="menu__item-price" aria-label="Price: $10">$10</span>
           </div>
-          <div class="menu__card-top">
-            <span class="menu__new-badge">New</span>
-            <span class="menu__price" aria-label="Price: $7">$7</span>
-          </div>
-          <h3 class="menu__card-title">Sunrise Protein Yogurt</h3>
-          <p class="menu__card-desc">
-            Fresh seasonal fruit layered with keto granola. A lighter start to your morning,
-            still made with that Chaparrita care.
-          </p>
-          <p class="menu__keto-note" aria-label="Keto-friendly option">🌱 Keto-friendly</p>
-        </article>
 
+          <div class="menu__item" role="listitem">
+            <div class="menu__item-info">
+              <h4 class="menu__item-name">Braised Beef Burrito</h4>
+              <p class="menu__item-desc">Marinated and slowly cooked for 4+ hours until perfectly tender. Packed with flavor and served with potatoes and beans.</p>
+            </div>
+            <span class="menu__item-price" aria-label="Price: $10">$10</span>
+          </div>
+
+          <div class="menu__item" role="listitem">
+            <div class="menu__item-info">
+              <h4 class="menu__item-name">Veggie Breakfast Burrito</h4>
+              <p class="menu__item-desc">Potato, egg and cheese mixed with roasted poblano peppers.</p>
+            </div>
+            <span class="menu__item-price" aria-label="Price: $10">$10</span>
+          </div>
+
+        </div>
+
+        <p class="menu__list-footer">
+          🔥 Made fresh daily &nbsp;·&nbsp; 🌶️ Bold flavor in every bite &nbsp;·&nbsp; ⏱ Hot &amp; ready for you
+        </p>
+      </div>
+
+      <!-- ── CATEGORY 2: DIRTY SODAS ── -->
+      <div class="menu__category">
+        <div class="menu__category-header">
+          <div class="menu__category-header-left">
+            <div class="menu__pop-brand" aria-label="La Chaparrita POP brand">
+              <span class="menu__pop-brand-text">La Chaparrita</span>
+              <span class="menu__pop-brand-pop">POP</span>
+              <span class="menu__pop-brand-sub">Dirty Soda</span>
+            </div>
+            <h3 class="menu__cat-title">Signature Dirty Sodas</h3>
+          </div>
+          <div class="menu__category-header-right">
+            <span class="menu__cat-price-badge menu__cat-price-badge--soda">$7.50 · 24oz</span>
+            <span class="menu__cat-note">Fresh · Creamy · Made to Order</span>
+          </div>
+        </div>
+
+        <div class="menu__grid">
+
+          <article class="menu__card reveal-up" style="--delay: 0ms">
+            <div class="menu__card-image">
+              <img src="https://images.unsplash.com/photo-1568909344668-6f14a07b56a0?auto=format&fit=crop&w=800&q=80"
+                alt="Strawberry Dream Sprite — sweet creamy strawberry soda" loading="lazy" />
+              <div class="menu__card-img-badge">⭐ Customer Favorite</div>
+            </div>
+            <div class="menu__card-top">
+              <span class="menu__price" aria-label="Price: $7.50">$7.50</span>
+            </div>
+            <h3 class="menu__card-title">Strawberry Dream Sprite</h3>
+            <p class="menu__card-desc">Sweet, creamy strawberry soda with Sprite.</p>
+          </article>
+
+          <article class="menu__card reveal-up" style="--delay: 80ms">
+            <div class="menu__card-image">
+              <img src="https://images.unsplash.com/photo-1534353436294-0dbd4bdac845?auto=format&fit=crop&w=800&q=80"
+                alt="Eastside Coco Pepper — Dr Pepper vanilla lime coconut cream" loading="lazy" />
+            </div>
+            <div class="menu__card-top">
+              <span class="menu__price" aria-label="Price: $7.50">$7.50</span>
+            </div>
+            <h3 class="menu__card-title">Eastside Coco Pepper</h3>
+            <p class="menu__card-desc">Dr Pepper, vanilla, lime &amp; coconut cream.</p>
+          </article>
+
+          <article class="menu__card reveal-up" style="--delay: 160ms">
+            <div class="menu__card-image">
+              <img src="https://images.unsplash.com/photo-1499638673689-79a0b0b2f9e2?auto=format&fit=crop&w=800&q=80"
+                alt="Huntington Cherry Cream — cherry vanilla Coke float" loading="lazy" />
+            </div>
+            <div class="menu__card-top">
+              <span class="menu__price" aria-label="Price: $7.50">$7.50</span>
+            </div>
+            <h3 class="menu__card-title">Huntington Cherry Cream</h3>
+            <p class="menu__card-desc">Cherry vanilla Coke float vibes.</p>
+          </article>
+
+          <article class="menu__card reveal-up" style="--delay: 240ms">
+            <div class="menu__card-image">
+              <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=800&q=80"
+                alt="Island Sprite — pineapple coconut light refreshing" loading="lazy" />
+            </div>
+            <div class="menu__card-top">
+              <span class="menu__price" aria-label="Price: $7.50">$7.50</span>
+            </div>
+            <h3 class="menu__card-title">Island Sprite</h3>
+            <p class="menu__card-desc">Pineapple + coconut, light &amp; refreshing.</p>
+          </article>
+
+          <article class="menu__card reveal-up" style="--delay: 320ms">
+            <div class="menu__card-image">
+              <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=800&q=80"
+                alt="Dirty Vanilla Coke — smooth creamy vanilla classic" loading="lazy" />
+            </div>
+            <div class="menu__card-top">
+              <span class="menu__price" aria-label="Price: $7.50">$7.50</span>
+            </div>
+            <h3 class="menu__card-title">Dirty Vanilla Coke</h3>
+            <p class="menu__card-desc">Smooth, creamy vanilla classic.</p>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- ── CATEGORY 3: AGUA FRESCA ── -->
+      <div class="menu__category">
+        <div class="menu__category-header">
+          <div class="menu__category-header-left">
+            <span class="menu__cat-eyebrow">Handcrafted Drinks</span>
+            <h3 class="menu__cat-title">Agua Fresca Casera</h3>
+          </div>
+          <div class="menu__category-header-right">
+            <span class="menu__cat-note">Made Fresh. Made Real. Made for You.<br />Locally Inspired. Family Owned. Always Fresh.</span>
+          </div>
+        </div>
+
+        <div class="menu__grid menu__grid--2col">
+
+          <article class="menu__card reveal-up" style="--delay: 0ms">
+            <div class="menu__card-image">
+              <img src="https://images.unsplash.com/photo-1560508180-03f285f67ded?auto=format&fit=crop&w=800&q=80"
+                alt="Strawberry Lemonade — freshly squeezed" loading="lazy" />
+            </div>
+            <div class="menu__card-top">
+              <span class="menu__new-badge">Freshly Squeezed</span>
+            </div>
+            <h3 class="menu__card-title">Strawberry Lemonade</h3>
+            <p class="menu__card-desc">Freshly squeezed strawberry lemonade made with real fruit.</p>
+          </article>
+
+          <article class="menu__card reveal-up" style="--delay: 100ms">
+            <div class="menu__card-image">
+              <img src="https://images.unsplash.com/photo-1587049352851-8d4e89133924?auto=format&fit=crop&w=800&q=80"
+                alt="Blue Raspberry Lemonade — freshly squeezed" loading="lazy" />
+            </div>
+            <div class="menu__card-top">
+              <span class="menu__new-badge">Freshly Squeezed</span>
+            </div>
+            <h3 class="menu__card-title">Blue Raspberry Lemonade</h3>
+            <p class="menu__card-desc">Freshly squeezed blue raspberry lemonade, bold and refreshing.</p>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- ── CATEGORY 4: EXTRAS ── -->
+      <div class="menu__category">
+        <div class="menu__category-header">
+          <div class="menu__category-header-left">
+            <span class="menu__cat-eyebrow">Something Extra</span>
+            <h3 class="menu__cat-title">Sides &amp; More</h3>
+          </div>
+        </div>
+
+        <div class="menu__grid menu__grid--2col">
+
+          <article class="menu__card menu__card--new reveal-up" style="--delay: 0ms">
+            <div class="menu__card-image">
+              <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=800&q=80"
+                alt="Champurrado — warm Mexican chocolate masa drink" loading="lazy" />
+            </div>
+            <div class="menu__card-top">
+              <span class="menu__new-badge">New</span>
+              <span class="menu__price" aria-label="Price: $7">$7</span>
+            </div>
+            <h3 class="menu__card-title">Champurrado</h3>
+            <p class="menu__card-desc">
+              Thick chocolate masa drink spiced with cinnamon and piloncillo — perfect with a savory burrito.
+            </p>
+            <p class="menu__keto-note" aria-label="New menu note">✨ Warm &amp; cozy</p>
+          </article>
+
+          <article class="menu__card menu__card--new reveal-up" style="--delay: 100ms">
+            <div class="menu__card-image">
+              <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=800&q=80"
+                alt="Sunrise Protein Yogurt bowl with fresh fruit" loading="lazy" />
+            </div>
+            <div class="menu__card-top">
+              <span class="menu__new-badge">New</span>
+              <span class="menu__price" aria-label="Price: $7">$7</span>
+            </div>
+            <h3 class="menu__card-title">Sunrise Protein Yogurt</h3>
+            <p class="menu__card-desc">
+              Full of protein, fresh fruit, and your choice of keto granola, shaved coconut, or shredded nuts —
+              topped with honey &amp; cinnamon.
+            </p>
+            <p class="menu__keto-note" aria-label="Keto-friendly option">🌱 Keto-friendly</p>
+          </article>
+
+        </div>
       </div>
 
       <p class="menu__footer-note" aria-live="polite">
@@ -294,6 +422,68 @@
         </svg>
         Menu subject to availability. Arrive early for the best selection.
       </p>
+    </div>
+  </section>
+
+  <!-- ========== CATERING ========== -->
+  <section id="catering" class="catering section" aria-label="Catering and big orders">
+    <div class="container catering__inner">
+
+      <div class="catering__text reveal-left">
+        <span class="section__label">Big Orders</span>
+        <h2 class="section__heading">We Take Care of Big Orders!</h2>
+        <p>
+          Planning a work event, school function, or party? We've got you covered.
+          Call or text ahead and we'll have a fresh batch ready for your whole crew.
+        </p>
+        <ul class="catering__uses" aria-label="Perfect for">
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+            Schools &amp; educational events
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+            Office parties &amp; team breakfasts
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+            Get-togethers &amp; family events
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+            Pop-up events &amp; night markets
+          </li>
+        </ul>
+        <a href="tel:3236103124" class="btn catering__cta" aria-label="Call to place a big order">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.81a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16z" />
+          </svg>
+          Call or Text 323-610-3124
+        </a>
+      </div>
+
+      <div class="catering__highlight reveal-right" aria-hidden="true">
+        <div class="catering__phone-card">
+          <div class="catering__phone-card-label">Call or Text Ahead</div>
+          <div class="catering__phone-card-number">323-610-3124</div>
+          <div class="catering__phone-card-sub">Burritos for Schools, Office Parties,<br />or Just Get Togethers</div>
+          <div class="catering__phone-card-badge">We Have You Covered ❤️</div>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -312,8 +502,7 @@
           <a href="tel:3236103124" class="btn order__btn--call" aria-label="Call us at 323-610-3124">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path
-                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.81a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16z" />
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.81a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16z" />
             </svg>
             Call 323-610-3124
           </a>
@@ -334,7 +523,7 @@
         <div class="order__card">
           <div class="order__card-icon" aria-hidden="true">📞</div>
           <h3>Call Ahead</h3>
-          <p>Call by 6:30 AM to reserve your order. Pick up at 7 AM — no waiting in line.</p>
+          <p>Call or text by 6:30 AM to reserve your order. Pick up at 7 AM — no waiting in line.</p>
         </div>
         <div class="order__card">
           <div class="order__card-icon" aria-hidden="true">📲</div>
@@ -344,7 +533,7 @@
         <div class="order__card">
           <div class="order__card-icon" aria-hidden="true">🌯</div>
           <h3>Walk Up</h3>
-          <p>Just show up! We're set up Wed–Sat from 7 AM. Come early — we sell out fast.</p>
+          <p>Just show up! We're set up Tue–Fri from 7 AM. First come, first served.</p>
         </div>
       </div>
 
@@ -352,14 +541,18 @@
   </section>
 
   <!-- ========== HOURS ========== -->
+  <!-- NOTE: Hours updated to Tue–Fri per latest Instagram schedule post.
+       Verify with client if Saturday returns. -->
   <section id="hours" class="hours section" aria-label="Hours and availability">
     <div class="container hours__grid">
 
       <div class="hours__left reveal-left">
-        <h2 class="section__heading">
-          <span class="section_label">Hours</span> &amp; Availability
-        </h2>
+        <h2 class="section__heading">Hours &amp; Availability</h2>
         <dl class="hours__list">
+          <div class="hours__row hours__row--open">
+            <dt>Tuesday</dt>
+            <dd>7:00 AM – Sold Out</dd>
+          </div>
           <div class="hours__row hours__row--open">
             <dt>Wednesday</dt>
             <dd>7:00 AM – Sold Out</dd>
@@ -372,19 +565,15 @@
             <dt>Friday</dt>
             <dd>7:00 AM – Sold Out</dd>
           </div>
-          <div class="hours__row hours__row--open">
-            <dt>Saturday</dt>
-            <dd>7:00 AM – Sold Out</dd>
-          </div>
           <div class="hours__row hours__row--closed">
-            <dt>Sunday – Tuesday</dt>
+            <dt>Saturday – Monday</dt>
             <dd>Closed</dd>
           </div>
         </dl>
       </div>
 
       <aside class="hours__callout reveal-right" aria-label="Important notice">
-        Come early and grab your breakfast burrito before we sell out.
+        First come, first served. Come early and grab your breakfast burrito before we sell out.
       </aside>
     </div>
   </section>
@@ -401,7 +590,7 @@
           El Sereno, Los Angeles, CA 90032
         </address>
         <p class="location__note">
-          We set up outside the cafe entrance — look for the pop-up stand Wed–Sat from 7 AM.
+          We set up outside the cafe entrance — look for the pop-up stand Tue–Fri from 7 AM.
         </p>
         <a href="https://www.google.com/maps/dir/?api=1&destination=4905+Huntington+Drive+Los+Angeles+CA+90032"
           target="_blank" rel="noopener noreferrer" class="btn btn--avocado location__directions"
@@ -443,12 +632,11 @@
             <div class="contact__method-icon" aria-hidden="true">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round">
-                <path
-                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.81a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16z" />
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.81a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16z" />
               </svg>
             </div>
             <div>
-              <span class="contact__method-label">Phone</span>
+              <span class="contact__method-label">Phone / Text</span>
               <a href="tel:3236103124" class="contact__method-value">323-610-3124</a>
             </div>
           </li>
@@ -483,46 +671,33 @@
         </ul>
       </div>
 
-      <!-- Contact Form — powered by Formspree (free, no backend needed) -->
-      <!-- 1. Sign up at https://formspree.io (free tier = 50 submissions/month) -->
-      <!-- 2. Create a form and get your endpoint ID -->
-      <!-- 3. Replace YOUR_FORM_ID below with your actual ID -->
       <form class="contact__form reveal-right" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate
         aria-label="Contact form">
-
         <div class="form__group">
           <label for="contact-name" class="form__label">Your Name</label>
-          <input type="text" id="contact-name" name="name" class="form__input" placeholder="Delmis or Brian?" required
-            autocomplete="name" />
+          <input type="text" id="contact-name" name="name" class="form__input" placeholder="Your name" required autocomplete="name" />
         </div>
-
         <div class="form__group">
           <label for="contact-email" class="form__label">Email <span class="form__optional">(optional)</span></label>
-          <input type="email" id="contact-email" name="email" class="form__input" placeholder="you@example.com"
-            autocomplete="email" />
+          <input type="email" id="contact-email" name="email" class="form__input" placeholder="you@example.com" autocomplete="email" />
         </div>
-
         <div class="form__group">
           <label for="contact-subject" class="form__label">What's this about?</label>
           <select id="contact-subject" name="subject" class="form__input form__select" required>
             <option value="" disabled selected>Select a topic</option>
-            <option value="catering">Catering Inquiry</option>
+            <option value="catering">Catering / Big Order</option>
             <option value="order">Pre-Order Request</option>
             <option value="feedback">Feedback / Compliments</option>
             <option value="press">Press / Partnership</option>
             <option value="other">Other</option>
           </select>
         </div>
-
         <div class="form__group">
           <label for="contact-message" class="form__label">Message</label>
           <textarea id="contact-message" name="message" class="form__input form__textarea"
             placeholder="Tell us what's on your mind…" rows="5" required></textarea>
         </div>
-
-        <!-- Honeypot for spam prevention -->
         <input type="text" name="_gotcha" style="display:none" tabindex="-1" aria-hidden="true" />
-
         <button type="submit" class="btn form__submit">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -531,11 +706,9 @@
           </svg>
           Send Message
         </button>
-
         <p class="form__note">
-          Or call us directly: <a href="tel:3236103124">323-610-3124</a>
+          Or call/text us: <a href="tel:3236103124">323-610-3124</a>
         </p>
-
       </form>
 
     </div>
@@ -548,12 +721,12 @@
       <div class="footer__links">
         <a href="#hero">Top</a>
         <a href="#menu">Menu</a>
+        <a href="#catering">Catering</a>
         <a href="#order">Order</a>
         <a href="#location">Location</a>
         <a href="#contact">Contact</a>
-        <a href="https://instagram.com/la_chaparrita_co" target="_blank" rel="noopener noreferrer"
-          aria-label="Instagram">IG</a>
-        <a href="tel:3236103124" aria-label="Call us">323-610-3124</a>
+        <a href="https://instagram.com/la_chaparrita_co" target="_blank" rel="noopener noreferrer" aria-label="Instagram @la_chaparrita_co">IG</a>
+        <a href="tel:3236103124" aria-label="Call us at 323-610-3124">323-610-3124</a>
       </div>
       <div class="footer__copy">© 2026 La Chaparrita Burritos · El Sereno, Los Angeles, CA</div>
     </div>
@@ -561,5 +734,4 @@
 
   <script src="src/script.js" defer></script>
 </body>
-
 </html>
