@@ -6,12 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
     content="La Chaparrita Burritos — authentic home-cooked breakfast burritos and tortas. Family-run pop-up in El Sereno, LA. Wed–Sat, 7AM until sold out." />
+  <meta name="theme-color" content="#101214" />
   <title>La Chaparrita Burritos | El Sereno, LA</title>
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@400;500;600&display=swap"
     rel="stylesheet" />
+
   <link rel="stylesheet" href="src/styles.css" />
 </head>
 
@@ -20,100 +24,285 @@
   <!-- ========== NAV ========== -->
   <header class="nav">
     <a href="#hero" class="nav__logo">La Chaparrita</a>
-    <input type="checkbox" id="nav-toggle" class="nav__toggle-input" />
-    <label for="nav-toggle" class="nav__hamburger" aria-label="Toggle menu">
-      &#9776;
-    </label>
-    <ul class="nav__links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#menu">Menu</a></li>
-      <li><a href="#hours">Hours</a></li>
-      <li><a href="#location">Location</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li>
 
-        href="https://instagram.com/la_chaparrita_co"
-        target="_blank"
-        rel="noopener"
-        aria-label="Instagram"
-        >
-        IG
-        </a>
-      </li>
-    </ul>
+    <input type="checkbox" id="nav-toggle" class="nav__toggle-input" aria-hidden="true" />
+    <label for="nav-toggle" class="nav__hamburger" aria-label="Toggle navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <nav aria-label="Main navigation">
+      <ul class="nav__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#hours">Hours</a></li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="https://instagram.com/la_chaparrita_co" target="_blank" rel="noopener noreferrer"
+            aria-label="Follow @la_chaparrita_co on Instagram" class="nav__ig-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+            </svg>
+            <span>@la_chaparrita_co</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
   <!-- ========== HERO ========== -->
   <section id="hero" class="hero">
+    <div class="hero__bg-blob hero__bg-blob--1" aria-hidden="true"></div>
+    <div class="hero__bg-blob hero__bg-blob--2" aria-hidden="true"></div>
+
     <div class="hero__content">
-      <p class="hero__eyebrow">El Sereno, Los Angeles</p>
-      <h1 class="hero__title">La Chaparrita<br />Burritos</h1>
+      <p class="hero__eyebrow">
+        <span class="hero__eyebrow-dot" aria-hidden="true"></span>
+        El Sereno · Los Angeles
+        <span class="hero__eyebrow-dot" aria-hidden="true"></span>
+      </p>
+      <h1 class="hero__title">
+        <span class="hero__title-line">La</span>
+        <span class="hero__title-line hero__title-line--italic">Chaparrita</span>
+        <span class="hero__title-line hero__title-line--sub">Burritos</span>
+      </h1>
       <p class="hero__tagline">
-        Authentic home-cooked breakfast burritos &amp; telera tortas.
-        <br />Made with love by Delmis &amp; Brian.
+        Authentic home-cooked breakfast burritos &amp; telera tortas.<br />
+        Made with love by Delmis &amp; Brian — right here in El Sereno.
       </p>
       <div class="hero__ctas">
-        <a href="#location" class="btn">Find Us</a>
+        <a href="#location" class="btn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+          Find Us
+        </a>
         <a href="#menu" class="btn btn--outline">See the Menu</a>
       </div>
     </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <span>scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
   </section>
+
+  <!-- ========== TICKER ========== -->
+  <div class="ticker" aria-hidden="true" role="presentation">
+    <div class="ticker__track">
+      <span class="ticker__set">
+        Breakfast Burritos · Telera Tortas · El Sereno, LA · $7 · Wed – Sat · 7:00 AM · Family Recipe · Oaxaca Cheese ·
+        Avocado Spread · Open Now ·
+      </span>
+      <span class="ticker__set" aria-hidden="true">
+        Breakfast Burritos · Telera Tortas · El Sereno, LA · $7 · Wed – Sat · 7:00 AM · Family Recipe · Oaxaca Cheese ·
+        Avocado Spread · Open Now ·
+      </span>
+    </div>
+  </div>
 
   <!-- ========== ABOUT ========== -->
   <section id="about" class="about section">
     <div class="container about__grid">
+
+      <figure class="about__figure" aria-hidden="true">
+        <div class="about__figure-inner">
+          <div class="about__figure-badge">Est. El Sereno</div>
+          <div class="about__figure-emoji">🌯</div>
+          <div class="about__figure-tag">Family Recipe</div>
+          <div class="about__figure-corner-tl" aria-hidden="true"></div>
+          <div class="about__figure-corner-br" aria-hidden="true"></div>
+        </div>
+      </figure>
+
       <div class="about__text">
-        <h2 class="section__heading">Our Story</h2>
+        <span class="section__label">Our Story</span>
+        <h2 class="section__heading">Born on the Streets of El Sereno</h2>
         <p>
-          La Chaparrita Burritos is a family-run breakfast pop-up born right
-          here in El Sereno. Delmis and her son Brian bring the flavors of a
-          home kitchen straight to the streets — every burrito and torta made
-          fresh, every morning, with the kind of care you only get from
-          family.
+          La Chaparrita Burritos is a family-run breakfast pop-up born right here in El Sereno.
+          Delmis and her son Brian bring the flavors of a home kitchen straight to the streets —
+          every burrito and torta made fresh every morning, with the kind of care you only get from family.
         </p>
         <p>
-          You'll find us set up right outside Elephant Hills Cafe on
-          Huntington Drive, Wednesday through Saturday starting at 7AM. Come
-          early — we sell out fast.
+          No shortcuts. Just real ingredients, real recipes, and real love — wrapped up tight and
+          ready at 7AM. Find us set up outside Elephant Hills Cafe on Huntington Drive,
+          Wednesday through Saturday. Come early — we sell out fast.
         </p>
+        <a href="#menu" class="btn btn--avocado">See What We're Making →</a>
       </div>
-      <div class="about__image-placeholder" aria-hidden="true">
-        🌯
-      </div>
+
     </div>
   </section>
 
   <!-- ========== MENU ========== -->
   <section id="menu" class="menu section">
     <div class="container">
-      <h2 class="section__heading section__heading--light">The Menu</h2>
+      <header class="menu__header">
+        <span class="section__label section__label--dim">What We Serve</span>
+        <h2 class="section__heading section__heading--light">The Menu</h2>
+        <p class="menu__subtitle">Everything made fresh. Everything $7. Every morning.</p>
+      </header>
+
       <div class="menu__grid">
 
-        <div class="menu__card">
-          <div class="menu__card-emoji">🌯</div>
-          <h3>Breakfast Burrito</h3>
-          <p>
-            Your choice of steak, chorizo, sausage, or potato — wrapped with
-            beans, avocado spread, and Oaxaca cheese.
+        <article class="menu__card">
+          <div class="menu__card-image">
+            <img src="https://images.unsplash.com/photo-1495195134817-aeb325a55b65?auto=format&fit=crop&w=800&q=80"
+              alt="Breakfast burrito" />
+          </div>
+          <div class="menu__card-top">
+            <span class="menu__price" aria-label="Price: $7">$7</span>
+          </div>
+          <h3 class="menu__card-title">Breakfast Burrito</h3>
+          <p class="menu__card-desc">
+            Your choice of protein wrapped with beans, creamy avocado spread, and melted Oaxaca cheese.
           </p>
-          <span class="menu__price">$7</span>
-        </div>
+          <ul class="menu__proteins" aria-label="Protein options">
+            <li>Steak</li>
+            <li>Chorizo</li>
+            <li>Sausage</li>
+            <li>Potato</li>
+          </ul>
+        </article>
 
-        <div class="menu__card">
-          <div class="menu__card-emoji">🥖</div>
-          <h3>Breakfast Torta</h3>
-          <p>
-            Same great fillings served on a fresh telera roll — beans,
-            avocado spread, and Oaxaca cheese.
+        <article class="menu__card">
+          <div class="menu__card-image">
+            <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=800&q=80"
+              alt="Breakfast torta" />
+          </div>
+          <div class="menu__card-top">
+            <span class="menu__price" aria-label="Price: $7">$7</span>
+          </div>
+          <h3 class="menu__card-title">Breakfast Torta</h3>
+          <p class="menu__card-desc">
+            Same great fillings on a fresh telera roll — beans, avocado spread, and Oaxaca cheese.
           </p>
-          <span class="menu__price">$7</span>
-        </div>
+          <ul class="menu__proteins" aria-label="Protein options">
+            <li>Steak</li>
+            <li>Chorizo</li>
+            <li>Sausage</li>
+            <li>Potato</li>
+          </ul>
+        </article>
 
-        <div class="menu__card menu__card--new">
-          <div class="menu__card-emoji">🫙</div>
-          <h3>Sunrise Protein Yogurt <span class="menu__badge">New</span></h3>
-          <p>
-            Fresh fruit and keto granola. A lighter option to start your
-            morning right.
+        <article class="menu__card menu__card--new">
+          <div class="menu__card-image">
+            <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=800&q=80"
+              alt="Champurrado drink" />
+          </div>
+          <div class="menu__card-top">
+            <span class="menu__new-badge">New</span>
+            <span class="menu__price" aria-label="Price: $7">$7</span>
+          </div>
+          <h3 class="menu__card-title">Champurrado</h3>
+          <p class="menu__card-desc">
+            Thick chocolate masa drink spiced with cinnamon and piloncillo — perfect with a savory burrito.
           </p>
-          <span class="menu__price
+          <p class="menu__keto-note" aria-label="New menu note">✨ Warm & cozy</p>
+        </article>
+
+        <article class="menu__card menu__card--new">
+          <div class="menu__card-image">
+            <img src="https://images.unsplash.com/photo-1523986371872-9d3ba2e2f0d7?auto=format&fit=crop&w=800&q=80"
+              alt="Protein yogurt bowl" />
+          </div>
+          <div class="menu__card-top">
+            <span class="menu__new-badge">New</span>
+            <span class="menu__price" aria-label="Price: $7">$7</span>
+          </div>
+          <h3 class="menu__card-title">Sunrise Protein Yogurt</h3>
+          <p class="menu__card-desc">
+            Fresh seasonal fruit layered with keto granola. A lighter start to your morning,
+            still made with that Chaparrita care.
+          </p>
+          <p class="menu__keto-note" aria-label="Keto-friendly option">🌱 Keto-friendly</p>
+        </article>
+
+      </div>
+
+      <p class="menu__footer-note" aria-live="polite">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="10" />
+          <line x1="12" y1="8" x2="12" y2="12" />
+          <line x1="12" y1="16" x2="12.01" y2="16" />
+        </svg>
+        Menu subject to availability. Arrive early for the best selection.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== HOURS ========== -->
+  <section id="hours" class="hours section">
+    <div class="container hours__grid">
+
+      <div class="hours__left">
+        <h2 class="section__heading">
+          <span class="section_label">Hours</span> &amp; Availability
+        </h2>
+        <dl class="hours__list">
+          <div class="hours__row hours__row--open">
+            <dt>Wednesday</dt>
+            <dd>7:00 AM – Sold Out</dd>
+          </div>
+          <div class="hours__row hours__row--open">
+            <dt>Thursday</dt>
+            <dd>7:00 AM – Sold Out</dd>
+          </div>
+          <div class="hours__row hours__row--open">
+            <dt>Friday</dt>
+            <dd>7:00 AM – Sold Out</dd>
+          </div>
+          <div class="hours__row hours__row--open">
+            <dt>Saturday</dt>
+            <dd>7:00 AM – Sold Out</dd>
+          </div>
+          <div class="hours__row hours__row--closed">
+            <dt>Sunday – Tuesday</dt>
+            <dd>Closed</dd>
+          </div>
+        </dl>
+      </div>
+
+      <aside class="hours__callout">
+        Come early and grab your breakfast burrito before we sell out.
+      </aside>
+    </div>
+  </section>
+
+  <!-- ========== LOCATION ========== -->
+  <section id="location" class="location section">
+    <div class="container location__grid">
+      <div>
+        <span class="section__label">Find Us beside</span>
+        <h2 class="section__heading">Elephant Hills Cafe</h2>
+        <address>
+          1234 Huntington Drive<br />
+          El Sereno, Los Angeles, CA
+        </address>
+      </div>
+      <div class="location__map" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__logo">La Chaparrita</div>
+      <div class="footer__links">
+        <a href="#hero">Top</a>
+        <a href="#menu">Menu</a>
+        <a href="#location">Location</a>
+      </div>
+      <div class="footer__copy">© 2026 La Chaparrita Burritos</div>
+    </div>
+  </footer>
+</body>
+
+</html>
