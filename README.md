@@ -18,7 +18,7 @@ outside Elephant Hills Cafe on Huntington Drive — Wed through Sat, 7AM until s
 - Deploy: GitHub Pages
 
 ## 🔗 Live Site
-https://blueavian9.github.io/La-Chaparrita-Burrito-Mobile-Mexican-Burritos-/
+https://blueavian9.github.io/La-Chaparrita-Burritos/
 
 ## 📍 Business Info
 Location: 4905 Huntington Drive, Los Angeles, CA 90032
