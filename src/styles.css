@@ -314,6 +314,66 @@ section {
     line-height: 1;
 }
 
+/* Improved double ring and overflow so text can visually pop outside the badge */
+.nav__logo {
+    overflow: visible;
+}
+
+.nav__logo-icon-wrap {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+    /* allow pseudo-elements to sit behind the image */
+}
+
+.nav__logo-icon-wrap::before,
+.nav__logo-icon-wrap::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.nav__logo-icon-wrap::before {
+    /* inner thin ring */
+    width: 56px;
+    height: 56px;
+    border: 2px solid rgba(255, 255, 255, 0.12);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0));
+    z-index: 0;
+}
+
+.nav__logo-icon-wrap::after {
+    /* outer ring with subtle modern accent */
+    width: 66px;
+    height: 66px;
+    border: 2px solid rgba(255, 92, 168, 0.18);
+    box-shadow: 0 6px 18px rgba(16, 18, 20, 0.35);
+    z-index: -1;
+}
+
+.nav__logo-icon {
+    position: relative;
+    z-index: 2;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.nav__logo:hover .nav__logo-icon-wrap::after {
+    transform: translate(-50%, -50%) scale(1.02);
+    box-shadow: 0 8px 26px rgba(16, 18, 20, 0.45);
+}
+
 .nav__links {
     display: flex;
     list-style: none;
